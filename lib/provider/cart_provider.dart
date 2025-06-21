@@ -49,6 +49,7 @@ class CartNotifire extends StateNotifier<Map<String,CartModel>>{
        }else{
          //if the product is not in the cart add it with the provide details
          state={
+           ...state,
            productId:CartModel(
                productName: productName,
                productPrice: productPrice,
